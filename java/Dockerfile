@@ -7,7 +7,7 @@ RUN mvn -q dependency:go-offline
 COPY src/ src/
 RUN mvn -q package -DskipTests -Djacoco.skip=true
 
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:25-jre
 WORKDIR /srv
 COPY --from=build /build/target/boletim-api.jar app.jar
 RUN useradd --create-home boletim
