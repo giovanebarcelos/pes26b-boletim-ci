@@ -32,8 +32,8 @@ public class CalculadoraBoletim {
 
         List<Double> ordenadas = new ArrayList<>(notas);
         ordenadas.sort(null);
-        double menor = ordenadas.getFirst();
-        double maior = ordenadas.getLast();
+        double menor = ordenadas.get(0);;
+        double maior = ordenadas.get(ordenadas.size() - 1);
 
         return new Boletim(aluno.trim(), media, situacao, maior, menor,
                 aluno.trim() + ": " + situacao + " com media " + media);

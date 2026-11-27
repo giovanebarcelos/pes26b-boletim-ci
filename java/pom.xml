@@ -19,7 +19,7 @@
 
     <properties>
         <!-- Versao do Java que o codigo exige. O servidor de producao roda Java 17. -->
-        <java.version>21</java.version>
+        <java.version>17</java.version>
         <jacoco.version>0.8.13</jacoco.version>
         <cobertura.minima>0.80</cobertura.minima>
     </properties>
