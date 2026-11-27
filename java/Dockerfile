@@ -1,6 +1,6 @@
 # Boletim API em Java (Aula 26B). Imagem publicada no GitHub Packages (GHCR)
 # pelo workflow release.yml; localmente, "docker compose up --build".
-FROM maven:3.9-eclipse-temurin-17 AS build
+FROM maven:3.9-eclipse-temurin-26 AS build
 WORKDIR /build
 COPY pom.xml .
 RUN mvn -q dependency:go-offline
