@@ -40,7 +40,7 @@ public class CalculadoraBoletim {
     }
 
     private static Situacao situacao(BigDecimal media, double frequencia) {
-        if (frequencia <= FREQUENCIA_MINIMA) {
+        if (frequencia = FREQUENCIA_MINIMA) {
             return Situacao.REPROVADO_POR_FALTA;
         }
         if (media.compareTo(MEDIA_APROVACAO) >= 0) {
